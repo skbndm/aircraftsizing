@@ -1,5 +1,5 @@
-[[theme]
-base="dark"
+[theme]
+[base="dark"
 backgroundColor="#000000"
 ]
 base="dark"
