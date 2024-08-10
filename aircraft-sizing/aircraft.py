@@ -77,14 +77,14 @@ def rectangular(weight, wcl, aspect_ratio):
 
     # EMPENNAGE CALCULATIONS:
     H_stab_w = (0.15 * F_length)
-    Area_H_stab = (0.15 * a_1)
+    Area_H_stab = (0.30 * a_1)
     H_stab_length = (Area_H_stab / H_stab_w)
     st.write('### Width of Horizontal Stabilizer:', H_stab_w, 'inches')
     st.write('### Length of Horizontal Stabilizer:', H_stab_length, 'inches')
     st.write('### Area of Horizontal Stabilizer:', Area_H_stab, 'sq inches')
 
     V_stab_w = (0.15 * F_length)
-    Area_V_stab = (0.10 * a_1)
+    Area_V_stab = (0.50 * Area_H_stab)
     V_stab_height = (Area_V_stab / V_stab_w)
     st.write('### Width of Vertical Stabilizer:', V_stab_w, 'inches')
     st.write('### Height of Vertical Stabilizer:', V_stab_height, 'inches')
@@ -130,14 +130,14 @@ def tapered(weight, wcl, aspect_ratio, Taper_Ratio):
 
     # EMPENNAGE CALCULATIONS:
     H_stab_w = (0.15 * F_length)
-    Area_H_stab = (0.15 * a_1)
+    Area_H_stab = (0.30 * a_1)
     H_stab_length = (Area_H_stab / H_stab_w)
     st.write('### Width of Horizontal Stabilizer:', H_stab_w, 'inches')
     st.write('### Length of Horizontal Stabilizer:', H_stab_length, 'inches')
     st.write('### Area of Horizontal Stabilizer:', Area_H_stab, 'sq inches')
 
     V_stab_w = (0.15 * F_length)
-    Area_V_stab = (0.10 * a_1)
+    Area_V_stab = (0.50 * Area_H_stab)
     V_stab_height = (Area_V_stab / V_stab_w)
     st.write('### Width of Vertical Stabilizer:', V_stab_w, 'inches')
     st.write('### Height of Vertical Stabilizer:', V_stab_height, 'inches')
@@ -180,8 +180,15 @@ def delta(weight, wcl, aspect_ratio):
     st.write('### Fuselage Height:', F_height, 'inches')
 
     # EMPENNAGE CALCULATIONS:
+    H_stab_w = (0.15 * F_length)
+    Area_H_stab = (0.30 * a_1)
+    H_stab_length = (Area_H_stab / H_stab_w)
+    st.write('### Width of Horizontal Stabilizer:', H_stab_w, 'inches')
+    st.write('### Length of Horizontal Stabilizer:', H_stab_length, 'inches')
+    st.write('### Area of Horizontal Stabilizer:', Area_H_stab, 'sq inches')
+    
     V_stab_w = (0.15 * F_length)
-    Area_V_stab = (0.15 * a_1)
+    Area_V_stab = (0.50 * Area_H_stab)
     V_stab_height = (Area_V_stab / V_stab_w)
     st.write('### Width of Vertical Stabilizer:', V_stab_w, 'inches')
     st.write('### Height of Vertical Stabilizer:', V_stab_height, 'inches')
